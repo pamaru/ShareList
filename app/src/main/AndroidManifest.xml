@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.udc.psi1617.trabajotutelado.sharelist">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="ShareList"
+        android:supportsRtl="true"
+        android:theme="@style/MyCustomTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/logo"
+            android:label="    Mis Listas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuariosParaInvitar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InfoLista"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".InfoItem"></activity>
+
+        <service
+            android:name=".FirebaseBackgroundService"
+            android:exported="false">
+        </service>
+
+
+    </application>
+
+</manifest>

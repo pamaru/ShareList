@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="es.udc.psi1617.trabajotutelado.sharelist.ListasFragm"
+        android:id="@+id/fragm_listas"
+        tools:layout="@layout/fragment_listas"
+        android:layout_weight="1"/>
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="es.udc.psi1617.trabajotutelado.sharelist.ElementosFragm"
+        android:id="@+id/fragm_elementos"
+        tools:layout="@layout/fragment_elementos"
+        android:layout_weight="2"/>
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="es.udc.psi1617.trabajotutelado.sharelist.AyudaFragm"
+        android:id="@+id/fragm_ayuda"
+        tools:layout="@layout/fragment_ayuda"
+        android:layout_weight="2"/>
+
+</LinearLayout>

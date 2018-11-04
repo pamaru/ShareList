@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.udc.psi1617.trabajotutelado.sharelist.InfoItem">
+
+    <TextView
+        android:id="@+id/nombre_item"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"
+        android:textColor="@color/rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_below="@id/nombre_item"
+        android:text="@string/item_a_adido_por"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/creador_item"
+        android:textSize="18sp"
+        android:background="@color/rojo"
+        android:textColor="@color/blanco"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@id/creador_item"
+        android:id="@+id/nombre_creador_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:text="20/12/2016"
+        android:id="@+id/fecha_creador_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/negro"
+        android:layout_below="@+id/nombre_creador_item"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_below="@id/fecha_creador_item"
+        android:text="@string/estado_del_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/estado_item"
+        android:textSize="18sp"
+        android:background="@color/rojo"
+        android:textColor="@color/blanco"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_estado"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/estado_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/estado"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="@color/negro"/>
+
+
+        <TextView
+            android:id="@+id/fecha_estado"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/negro"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@id/ll_estado"
+        android:id="@+id/quien_tacho_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/negro"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/comentario_item"
+        android:textSize="18sp"
+        android:textColor="@color/negro"
+        android:layout_below="@id/quien_tacho_item"
+        android:background="@color/rojito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="@string/tachar"
+            android:id="@+id/tachar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="@string/destachar"
+            android:id="@+id/destachar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

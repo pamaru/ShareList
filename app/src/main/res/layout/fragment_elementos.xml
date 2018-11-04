@@ -1,0 +1,119 @@
+<RelativeLayout
+    android:id="@+id/rl_elementos"
+    android:background="@color/blanco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.udc.psi1617.trabajotutelado.sharelist.ElementosFragm"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupo_añadir_invitar">
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/añadir_item"
+            android:textColor="@color/blanco"
+            android:id="@+id/but_añadir_elemento"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:background="@color/rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invitar"
+            android:textColor="@color/blanco"
+            android:id="@+id/but_invitar"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:background="@color/rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info"
+            android:textColor="@color/blanco"
+            android:id="@+id/but_info"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupo_editar_borrar"
+        android:visibility="gone">
+
+        <Button
+            android:text="@string/editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/but_editar"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="@string/borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/but_borrar"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/blanco"
+        android:id="@+id/tv_elementos"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nombre_lista"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/tv_elementos"
+        android:visibility="gone"
+        android:id="@+id/tv_sin_elementos"
+        android:text="@string/sin_items"
+        android:textSize="18dp"
+        android:textColor="@color/rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@color/rojo"
+        android:dividerHeight="1.0sp"
+        android:background="@color/blanco"
+        android:layout_below="@id/tv_sin_elementos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lista2"
+        android:layout_above="@id/grupo_añadir_invitar"/>
+
+
+</RelativeLayout>

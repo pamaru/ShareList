@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.udc.psi1617.trabajotutelado.sharelist.ListasFragm"
+    android:orientation="vertical"
+    android:background="@color/blanco">
+
+    <RelativeLayout
+        android:id="@+id/no_listas"
+        android:layout_alignParentTop="true"
+        android:background="@color/blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no_listas"
+            android:textColor="@color/rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/blanco"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/añadir_una_nueva_lista"
+        android:id="@+id/but_añadir"/>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@color/rojo"
+        android:dividerHeight="1.0sp"
+        android:background="@color/blanco"
+        android:layout_below="@id/no_listas"
+        android:layout_above="@id/but_añadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista1" />
+
+
+
+
+</RelativeLayout>

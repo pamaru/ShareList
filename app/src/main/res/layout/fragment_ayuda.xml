@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.udc.psi1617.trabajotutelado.sharelist.AyudaFragm"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/volver1"
+        android:text="@string/volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_below="@id/volver1"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/scrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tv_ayuda"
+            android:textStyle="italic"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="22dp"
+            android:text="@string/ayuda_listas_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

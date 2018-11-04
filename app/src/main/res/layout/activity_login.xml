@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.udc.psi1617.trabajotutelado.sharelist.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/rojo">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="ShareList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo"
+        android:fontFamily="casual"
+        android:textColor="@color/blanco"
+        android:textSize="60sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_botones"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Pablo Maroto Ruíz\nSergio Rodríguez Rama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@color/blanco"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/presentacion"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bienvenido_str"
+        android:textColor="@color/blanco"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blanco"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_contraseña"
+        android:hint="@string/contraseña_str"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/et_email"
+        android:layout_alignStart="@+id/et_email"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:textColor="@color/blanco"
+        android:text="@string/crear_cuenta_str"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/but_crear_cuenta"
+        android:textAllCaps="false"
+        android:soundEffectsEnabled="true"
+        android:fontFamily="sans-serif"
+        tools:text="Crear Cuenta"
+        android:layout_below="@+id/but_iniciar_sesion"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textColor="@color/blanco"
+        android:text="@string/iniciar_sesion_str"
+        android:layout_width="wrap_content"
+        android:id="@+id/but_iniciar_sesion"
+        android:soundEffectsEnabled="true"
+        tools:text="Iniciar Sesión"
+        android:fontFamily="sans-serif"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_contraseña"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blanco"
+        android:layout_height="30dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/et_email"
+        android:hint="@string/email_str"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/presentacion"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
